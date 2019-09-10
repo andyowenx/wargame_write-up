@@ -1,0 +1,37 @@
+# Nmap 7.80 scan initiated Fri Sep  6 14:57:36 2019 as: nmap -sC -sV -oA nmap_result -p- 192.168.247.132
+Nmap scan report for 192.168.247.132
+Host is up (0.0010s latency).
+Not shown: 65532 closed ports
+PORT     STATE SERVICE VERSION
+21/tcp   open  ftp     vsftpd 2.0.8 or later
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+|_drwxr-xr-x    2 0        0            4096 Jul 12 22:26 secret
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to 192.168.247.128
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      At session startup, client count was 1
+|      vsFTPd 3.0.2 - secure, fast, stable
+|_End of status
+80/tcp   open  http    Apache httpd 2.4.7 ((Ubuntu))
+| http-robots.txt: 4 disallowed entries 
+|_/wordpress/ /tokens/ /users/ /store/track.txt
+|_http-server-header: Apache/2.4.7 (Ubuntu)
+|_http-title: Mission-Pumpkin
+6880/tcp open  ssh     OpenSSH 6.6.1p1 Ubuntu 2ubuntu2.13 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   1024 eb:cb:da:b3:be:b6:c8:0a:8b:6e:d5:bc:51:f7:9c:11 (DSA)
+|   2048 19:6b:6e:d3:8a:fa:a9:73:05:5e:ac:af:28:ff:55:b8 (RSA)
+|   256 00:a0:f2:8c:5e:a7:7e:7b:7b:d4:72:c3:ad:41:79:3b (ECDSA)
+|_  256 aa:04:61:9a:ca:19:90:c3:55:3c:fc:cc:1a:05:be:3f (ED25519)
+MAC Address: 00:0C:29:5A:89:21 (VMware)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Sep  6 14:57:49 2019 -- 1 IP address (1 host up) scanned in 13.44 seconds

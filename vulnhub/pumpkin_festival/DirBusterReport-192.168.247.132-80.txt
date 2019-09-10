@@ -1,0 +1,26 @@
+DirBuster 1.0-RC1 - Report
+http://www.owasp.org/index.php/Category:OWASP_DirBuster_Project
+Report produced on Fri Sep 06 14:49:59 CST 2019
+--------------------------------
+
+http://192.168.247.132:80
+--------------------------------
+Directories found during testing:
+
+Dirs found with a 200 response:
+
+/
+
+Dirs found with a 403 response:
+
+/img/
+/icons/
+/users/
+/store/
+/icons/small/
+/server-status/
+/tokens/
+
+
+--------------------------------
+--------------------------------

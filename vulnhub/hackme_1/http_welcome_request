@@ -1,0 +1,16 @@
+POST /welcome.php HTTP/1.1
+Host: 192.168.247.129
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://192.168.247.129/welcome.php
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 13
+Cookie: PHPSESSID=m6nqhkn40a09au7g3h4pfk6o9h
+Connection: close
+Upgrade-Insecure-Requests: 1
+
+search=123123
+
+

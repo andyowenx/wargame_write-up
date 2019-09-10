@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Fri Sep  6 14:57:36 2019 as: nmap -sC -sV -oA nmap_result -p- 192.168.247.132 -->
+<nmaprun scanner="nmap" args="nmap -sC -sV -oA nmap_result -p- 192.168.247.132" start="1567753056" startstr="Fri Sep  6 14:57:36 2019" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1567753056" endtime="1567753069"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.247.132" addrtype="ipv4"/>
+<address addr="00:0C:29:5A:89:21" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65532">
+<extrareasons reason="resets" count="65532"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ftp" product="vsftpd" version="2.0.8 or later" method="probed" conf="10"><cpe>cpe:/a:vsftpd:vsftpd</cpe></service><script id="ftp-anon" output="Anonymous FTP login allowed (FTP code 230)&#xa;drwxr-xr-x    2 0        0            4096 Jul 12 22:26 secret"/><script id="ftp-syst" output="&#xa;  STAT: &#xa;FTP server status:&#xa;     Connected to 192.168.247.128&#xa;     Logged in as ftp&#xa;     TYPE: ASCII&#xa;     No session bandwidth limit&#xa;     Session timeout in seconds is 300&#xa;     Control connection is plain text&#xa;     Data connections will be plain text&#xa;     At session startup, client count was 1&#xa;     vsFTPd 3.0.2 - secure, fast, stable&#xa;End of status"><elem key="STAT">&#xa;FTP server status:&#xa;     Connected to 192.168.247.128&#xa;     Logged in as ftp&#xa;     TYPE: ASCII&#xa;     No session bandwidth limit&#xa;     Session timeout in seconds is 300&#xa;     Control connection is plain text&#xa;     Data connections will be plain text&#xa;     At session startup, client count was 1&#xa;     vsFTPd 3.0.2 - secure, fast, stable&#xa;End of status</elem>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" product="Apache httpd" version="2.4.7" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.7</cpe></service><script id="http-robots.txt" output="4 disallowed entries &#xa;/wordpress/ /tokens/ /users/ /store/track.txt"/><script id="http-server-header" output="Apache/2.4.7 (Ubuntu)"><elem>Apache/2.4.7 (Ubuntu)</elem>
+</script><script id="http-title" output="Mission-Pumpkin"><elem key="title">Mission-Pumpkin</elem>
+</script></port>
+<port protocol="tcp" portid="6880"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" product="OpenSSH" version="6.6.1p1 Ubuntu 2ubuntu2.13" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:6.6.1p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  1024 eb:cb:da:b3:be:b6:c8:0a:8b:6e:d5:bc:51:f7:9c:11 (DSA)&#xa;  2048 19:6b:6e:d3:8a:fa:a9:73:05:5e:ac:af:28:ff:55:b8 (RSA)&#xa;  256 00:a0:f2:8c:5e:a7:7e:7b:7b:d4:72:c3:ad:41:79:3b (ECDSA)&#xa;  256 aa:04:61:9a:ca:19:90:c3:55:3c:fc:cc:1a:05:be:3f (ED25519)"><table>
+<elem key="key">AAAAB3NzaC1kc3MAAACBALW9diS9uNGFnezf6QdyYCsBw9mnGA9ySbhpEJGV8+5J4k1YEZMLxmNHIgSPYbTsEfCqe/8Neye15jb5WBO8hYGcKaYFnJm4re1N337WoEZ76UnuWUrMWB+1TIPtXZq8woNHxt6gCDQq1kTGRMrkg5ErAoAwyydLXd46q9ZNsSFZAAAAFQCj/ANs0Ov+Ea8xGax0Pwtxqgr3SQAAAIEAjrlKrdpXAhG+ri82hHbMKlS0ml9HQbhEGmkL4GvX0cB97WjK46Q4aeu2u6e9GpnZo4kqGwPFswJ15ljb7xukTnSeKy7Tg7CVJ8uFjgOPca9sI4AvdnAF0yWnZMT9c5Sh006oX3Rlk93amJ76yIVpAfx4qQoH0VMVFnXEHzsLJtQAAACATyXtwaxR4krf7npm3LmPhsdu1IQs7MEmqX+rRMJBBgZhgPttewlwV2fR+NHiHC7A9wosPy9VbOz1VYknaIvEaBNyvt0NlpkGCYryKAFwd/UEaBio1xxSzdhgnVHN4DuhfACgHu/PAFlVw3D8TO8b/1ZmHBTYIPqpAn3tyY7IHIA=</elem>
+<elem key="fingerprint">ebcbdab3beb6c80a8b6ed5bc51f79c11</elem>
+<elem key="bits">1024</elem>
+<elem key="type">ssh-dss</elem>
+</table>
+<table>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQCpP9xyEjJSJWkU5xUnpgTyqmCldWEz271oN/X2pqt6hWx8ZuBfECyKjQiZJJDwT7sUKX9zQ1Y/+G0oWsrMJD2HQLSLxg8LxQpxZVHVaIskycHyBAqe48/yqsj7oSLvMv/KxbllF0FiOnKaqx7YjVzLizmhWjNTPkZm22b6foqYnHqJkDjNHWgMrRHZa3Ss+Ijrf8HldK00yTfI4EZR1clUbony3lJX9hfbenLiGyzxqUlsqnPDGejR74eQjPMdkPeNhj98Y/4bxRE9Rg9BNwl9obsXuQ05F3a3h8dWTOGBzuk19+2ge+4HAiViDurNSI0b6FXCCZoa6ee6a8lsy5+n</elem>
+<elem key="fingerprint">196b6ed38afaa973055eacaf28ff55b8</elem>
+<elem key="bits">2048</elem>
+<elem key="type">ssh-rsa</elem>
+</table>
+<table>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBBY0qnMqHeY4mERe6syFYVP3dTlY260wkBhEWfsmm13JlHGFxbCqu5lcLk+G9Eg9qLJVGy5j9Ois9P0L4pydaUE=</elem>
+<elem key="fingerprint">00a0f28c5ea77e7b7bd472c3ad41793b</elem>
+<elem key="bits">256</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+</table>
+<table>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIJpawv5IaL1206o8GhqzK0thiMnLgiXEJto/aUyb3srj</elem>
+<elem key="fingerprint">aa04619aca1990c3553cfccc1a05be3f</elem>
+<elem key="bits">256</elem>
+<elem key="type">ssh-ed25519</elem>
+</table>
+</script></port>
+</ports>
+<times srtt="1032" rttvar="1811" to="100000"/>
+</host>
+<runstats><finished time="1567753069" timestr="Fri Sep  6 14:57:49 2019" elapsed="13.44" summary="Nmap done at Fri Sep  6 14:57:49 2019; 1 IP address (1 host up) scanned in 13.44 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
