@@ -1,0 +1,35 @@
+DirBuster 1.0-RC1 - Report
+http://www.owasp.org/index.php/Category:OWASP_DirBuster_Project
+Report produced on Wed Sep 11 07:41:17 EDT 2019
+--------------------------------
+
+http://192.168.1.101:80
+--------------------------------
+Directories found during testing:
+
+Dirs found with a 403 response:
+
+/images/
+/icons/
+/scripts/
+/css/
+/icons/small/
+/hidden/
+/seeds/
+/server-status/
+
+Dirs found with a 200 response:
+
+/
+
+
+--------------------------------
+Files found during testing:
+
+Files found with a 200 responce:
+
+/pumpkin.html
+/underconstruction.html
+
+
+--------------------------------
