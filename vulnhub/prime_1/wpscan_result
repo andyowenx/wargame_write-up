@@ -1,0 +1,134 @@
+_______________________________________________________________
+        __          _______   _____
+        \ \        / /  __ \ / ____|
+         \ \  /\  / /| |__) | (___   ___  __ _ _ __ ®
+          \ \/  \/ / |  ___/ \___ \ / __|/ _` | '_ \
+           \  /\  /  | |     ____) | (__| (_| | | | |
+            \/  \/   |_|    |_____/ \___|\__,_|_| |_|
+
+        WordPress Security Scanner by the WPScan Team
+                       Version 3.6.3
+          Sponsored by Sucuri - https://sucuri.net
+      @_WPScan_, @ethicalhack3r, @erwan_lr, @_FireFart_
+_______________________________________________________________
+
+[+] URL: http://192.168.1.103/wordpress/
+[+] Started: Wed Sep 18 02:32:39 2019
+
+Interesting Finding(s):
+
+[+] http://192.168.1.103/wordpress/
+ | Interesting Entry: Server: Apache/2.4.18 (Ubuntu)
+ | Found By: Headers (Passive Detection)
+ | Confidence: 100%
+
+[+] http://192.168.1.103/wordpress/xmlrpc.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+ | References:
+ |  - http://codex.wordpress.org/XML-RPC_Pingback_API
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_ghost_scanner
+ |  - https://www.rapid7.com/db/modules/auxiliary/dos/http/wordpress_xmlrpc_dos
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_xmlrpc_login
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_pingback_access
+
+[+] http://192.168.1.103/wordpress/readme.html
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+
+[+] Upload directory has listing enabled: http://192.168.1.103/wordpress/wp-content/uploads/
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+
+[+] http://192.168.1.103/wordpress/wp-cron.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 60%
+ | References:
+ |  - https://www.iplocation.net/defend-wordpress-from-ddos
+ |  - https://github.com/wpscanteam/wpscan/issues/1299
+
+[+] WordPress version 5.2.2 identified (Insecure, released on 2019-06-18).
+ | Detected By: Rss Generator (Passive Detection)
+ |  - http://192.168.1.103/wordpress/?feed=rss2, <generator>https://wordpress.org/?v=5.2.2</generator>
+ |  - http://192.168.1.103/wordpress/?feed=comments-rss2, <generator>https://wordpress.org/?v=5.2.2</generator>
+ |
+ | [!] 6 vulnerabilities identified:
+ |
+ | [!] Title: WordPress 5.2.2 - Cross-Site Scripting (XSS) in Stored Comments
+ |     Fixed in: 5.2.3
+ |     References:
+ |      - https://wpvulndb.com/vulnerabilities/9861
+ |      - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-16218
+ |      - https://wordpress.org/news/2019/09/wordpress-5-2-3-security-and-maintenance-release/
+ |
+ | [!] Title: WordPress 5.2.2 - Authenticated Cross-Site Scripting (XSS) in Post Previews
+ |     Fixed in: 5.2.3
+ |     References:
+ |      - https://wpvulndb.com/vulnerabilities/9862
+ |      - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-16223
+ |      - https://wordpress.org/news/2019/09/wordpress-5-2-3-security-and-maintenance-release/
+ |
+ | [!] Title: WordPress 5.2.2 - Potential Open Redirect
+ |     Fixed in: 5.2.3
+ |     References:
+ |      - https://wpvulndb.com/vulnerabilities/9863
+ |      - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-16220
+ |      - https://wordpress.org/news/2019/09/wordpress-5-2-3-security-and-maintenance-release/
+ |      - https://github.com/WordPress/WordPress/commit/c86ee39ff4c1a79b93c967eb88522f5c09614a28
+ |
+ | [!] Title: WordPress 5.0-5.2.2 - Authenticated Stored XSS in Shortcode Previews
+ |     Fixed in: 5.2.3
+ |     References:
+ |      - https://wpvulndb.com/vulnerabilities/9864
+ |      - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-16219
+ |      - https://wordpress.org/news/2019/09/wordpress-5-2-3-security-and-maintenance-release/
+ |      - https://fortiguard.com/zeroday/FG-VD-18-165
+ |      - https://www.fortinet.com/blog/threat-research/wordpress-core-stored-xss-vulnerability.html
+ |
+ | [!] Title: WordPress 5.2.2 - Cross-Site Scripting (XSS) in Dashboard
+ |     Fixed in: 5.2.3
+ |     References:
+ |      - https://wpvulndb.com/vulnerabilities/9865
+ |      - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-16221
+ |      - https://wordpress.org/news/2019/09/wordpress-5-2-3-security-and-maintenance-release/
+ |
+ | [!] Title: WordPress <= 5.2.2 - Cross-Site Scripting (XSS) in URL Sanitisation
+ |     Fixed in: 5.2.3
+ |     References:
+ |      - https://wpvulndb.com/vulnerabilities/9867
+ |      - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-16222
+ |      - https://wordpress.org/news/2019/09/wordpress-5-2-3-security-and-maintenance-release/
+ |      - https://github.com/WordPress/WordPress/commit/30ac67579559fe42251b5a9f887211bf61a8ed68
+
+[+] WordPress theme in use: twentynineteen
+ | Location: http://192.168.1.103/wordpress/wp-content/themes/twentynineteen/
+ | Latest Version: 1.4 (up to date)
+ | Last Updated: 2019-05-07T00:00:00.000Z
+ | Readme: http://192.168.1.103/wordpress/wp-content/themes/twentynineteen/readme.txt
+ | Style URL: http://192.168.1.103/wordpress/wp-content/themes/twentynineteen/style.css?ver=1.4
+ | Style Name: Twenty Nineteen
+ | Style URI: https://wordpress.org/themes/twentynineteen/
+ | Description: Our 2019 default theme is designed to show off the power of the block editor. It features custom sty...
+ | Author: the WordPress team
+ | Author URI: https://wordpress.org/
+ |
+ | Detected By: Css Style (Passive Detection)
+ |
+ | Version: 1.4 (80% confidence)
+ | Detected By: Style (Passive Detection)
+ |  - http://192.168.1.103/wordpress/wp-content/themes/twentynineteen/style.css?ver=1.4, Match: 'Version: 1.4'
+
+
+[i] No plugins Found.
+
+
+[i] No Config Backups Found.
+
+
+[+] Finished: Wed Sep 18 02:32:40 2019
+[+] Requests Done: 22
+[+] Cached Requests: 32
+[+] Data Sent: 5.44 KB
+[+] Data Received: 3.474 KB
+[+] Memory used: 172.945 MB
+[+] Elapsed time: 00:00:01
