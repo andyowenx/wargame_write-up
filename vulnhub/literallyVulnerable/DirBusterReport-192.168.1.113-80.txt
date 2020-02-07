@@ -1,0 +1,56 @@
+DirBuster 1.0-RC1 - Report
+http://www.owasp.org/index.php/Category:OWASP_DirBuster_Project
+Report produced on Thu Feb 06 09:10:09 CST 2020
+--------------------------------
+
+http://192.168.1.113:80
+--------------------------------
+Directories found during testing:
+
+Dirs found with a 200 response:
+
+/
+/themes/
+/wp-content/
+/2000/
+/assets/
+/css/
+/wp-includes/
+/js/
+/Themes/
+/dist/
+/Assets/
+/CSS/
+/JS/
+/Dist/
+/xfn/
+
+
+--------------------------------
+Files found during testing:
+
+Files found with a 301 responce:
+
+/index.php
+
+Files found with a 200 responce:
+
+/wp-login.php
+/license.txt
+/readme.html
+/wp-admin/install.php
+/wp-admin/upgrade.php
+/wp-trackback.php
+/wp-signup.php
+
+Files found with a 302 responce:
+
+/wp-admin/update-core.php
+/wp-admin/import.php
+
+Files found with a 405 responce:
+
+/xmlrpc.php
+
+
+--------------------------------
