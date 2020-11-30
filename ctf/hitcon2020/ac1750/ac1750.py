@@ -6,6 +6,9 @@ from Crypto.Cipher import AES
 # The packet capture is of somebody exploiting the vulnerability
 # The command execution is typed in one character at a time, which happens to be the 100th byte of each UDP exploit packet after decryption
 
+
+#Ref : https://github.com/hyperreality/ctf-writeups/blob/master/2020_hitcon/ac1750/solve.py
+
 pkts = rdpcap("ac1750.pcapng")
 
 filtered = [pkt for pkt in pkts if
