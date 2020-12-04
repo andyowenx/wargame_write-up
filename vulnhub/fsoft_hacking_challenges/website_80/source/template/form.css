@@ -1,0 +1,105 @@
+.field {
+    top: 0;
+    left: 0;
+    margin: 0 1em 1em 0;
+}
+
+.field .field {
+    margin: 1em 0 0 0;
+}
+
+.field label {
+    font-size: 90%;
+    font-weight: bold;
+}
+
+.fieldRequired {
+    padding: 0 0 0 8px;
+    color: White;
+}
+
+.formHelp {
+    font-size: 80%;
+    color: #76797c;
+    margin: 0 0 0.2em 0;
+}
+
+.formHelp a {
+    text-decoration: underline;
+}
+
+.formHelp:hover {
+    color: Black;
+    cursor: default;
+}
+
+.formControls {
+   margin: 1em 0 0 0;
+}
+
+.error {
+    /* Class for error indication in forms */
+    background-color: #ffce7b;
+    border: 1px solid #ffa500;
+    padding: 1em;
+    margin: 0 0 1em 0;
+    width: 95% !important;
+}
+
+.error .fieldRequired {
+   color: #ffce7b;
+}
+
+.card {
+    background-color: #ffffff;
+    border-color: #999999;
+    border-width: 1px;
+    border-style: solid;
+    float: left;
+    margin: 1em;
+    text-align: center;
+    width: 110px;
+    padding: 1em 0;
+}
+
+fieldset {
+    border: 1px solid #999999;
+    margin: 1em 0em 1em 0em;
+    padding: 0em 1em 1em 1em;
+    line-height: 1.5em;
+    width: auto;
+}
+
+legend {
+    background: #ffffff;
+    padding: 0.5em;
+    font-size: 90%;
+}
+
+form {
+    border: none;
+    margin: 0;
+    text-align: left;
+}
+textarea {
+    font: 90% "Courier New", Courier, monospace;
+    border: 1px solid #999999;
+    color: Black;
+    background-color: white;
+    width: 80%;
+}
+input {
+    font-family: "Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif;
+    visibility: visible;
+    border: 1px solid #999999;
+    color: Black;
+    background-color: white;
+    vertical-align: middle;
+}
+select {
+    border: 1px solid #999999;
+    color: Black;
+    background-color: White;
+    vertical-align: top;
+}
+

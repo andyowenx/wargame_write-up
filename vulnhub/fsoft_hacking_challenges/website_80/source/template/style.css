@@ -1,0 +1,48 @@
+body {
+    font-family: arial, verdana, sans-serif;
+    font-size: 12px;
+    color: #333333;
+    background: #ddeeff;
+    margin: 0px;
+}
+
+#container {
+    background: url(../template/images/body.png) repeat-y;
+    width: 800px;
+    /*border: 1px solid gray;*/
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+}
+
+#top {
+    background: url(../template/images/header.png) no-repeat;
+    height: 200px;
+}
+
+#menu {
+    padding-top: 60px;
+    padding-left: 100px;
+}
+
+#content {
+    background: url(../template/images/topbody.png) no-repeat;
+    min-height: 360px;
+}
+
+.mceContentBody {
+    margin-left: 130px;
+    margin-right: 130px;
+}
+
+#bottom {
+    background: url(../template/images/footer.png) no-repeat;
+    height: 62px;
+    padding-top: 14px;
+    text-align: center;
+}
+
+a {
+  color: red;
+}
